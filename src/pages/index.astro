@@ -20,79 +20,23 @@ import Shelf from "../components/Shelf.astro";
     <TopBar />
     <main>
       <Shelf title="Populære kunstnere">
-        <PlaylistCard
-          imgPath="https://picsum.photos/id/14/350/350.webp"
-          title="Peaceful Piano"
-          body="Relax and indulge with beautiful piano pieces"
-        />
-        <PlaylistCard
-          imgPath="https://picsum.photos/id/15/350/350.webp"
-          title="Deep Focus"
-          body="Keep calm and focus with ambient and post-rock music."
-        />
-        <PlaylistCard
-          imgPath="https://picsum.photos/id/16/350/350.webp"
-          title="Heavy Metal"
-          body="Relax and indulge with beautiful piano pieces"
-        />
-        <PlaylistCard
-          imgPath="https://picsum.photos/id/17/350/350.webp"
-          title="Noisy Fusion"
-          body="Relax and indulge with beautiful piano pieces"
-        />
-        <PlaylistCard
-          imgPath="https://picsum.photos/id/11/350/350.webp"
-          title="Peaceful Guitar"
-          body="Relax and indulge with beautiful piano pieces"
-        />
-        <PlaylistCard
-          imgPath="https://picsum.photos/id/12/350/350.webp"
-          title="Harmful Piano"
-          body="Relax and indulge with beautiful piano pieces"
-        />
-        <PlaylistCard
-          imgPath="https://picsum.photos/id/13/350/350.webp"
-          title="Peaceful Piano"
-          body="Relax and indulge with beautiful piano pieces"
-        />
+        <PlaylistCard imgPath="https://picsum.photos/id/14/350/350.webp" title="Peaceful Piano" body="Relax and indulge with beautiful piano pieces" />
+        <PlaylistCard imgPath="https://picsum.photos/id/15/350/350.webp" title="Deep Focus" body="Keep calm and focus with ambient and post-rock music." />
+        <PlaylistCard imgPath="https://picsum.photos/id/16/350/350.webp" title="Heavy Metal" body="Relax and indulge with beautiful piano pieces" />
+        <PlaylistCard imgPath="https://picsum.photos/id/17/350/350.webp" title="Noisy Fusion" body="Relax and indulge with beautiful piano pieces" />
+        <PlaylistCard imgPath="https://picsum.photos/id/11/350/350.webp" title="Peaceful Guitar" body="Relax and indulge with beautiful piano pieces" />
+        <PlaylistCard imgPath="https://picsum.photos/id/12/350/350.webp" title="Harmful Piano" body="Relax and indulge with beautiful piano pieces" />
+        <PlaylistCard imgPath="https://picsum.photos/id/13/350/350.webp" title="Peaceful Piano" body="Relax and indulge with beautiful piano pieces" />
       </Shelf>
 
       <Shelf title="Spotify Playlist">
-        <PlaylistCard
-          imgPath="https://picsum.photos/id/18/350/350.webp"
-          title="Peaceful Piano"
-          body="Relax and indulge with beautiful piano pieces"
-        />
-        <PlaylistCard
-          imgPath="https://picsum.photos/id/19/350/350.webp"
-          title="Peaceful Piano"
-          body="Relax and indulge with beautiful piano pieces"
-        />
-        <PlaylistCard
-          imgPath="https://picsum.photos/id/20/350/350.webp"
-          title="Peaceful Piano"
-          body="Relax and indulge with beautiful piano pieces"
-        />
-        <PlaylistCard
-          imgPath="https://picsum.photos/id/21/350/350.webp"
-          title="Peaceful Piano"
-          body="Relax and indulge with beautiful piano pieces"
-        />
-        <PlaylistCard
-          imgPath="https://picsum.photos/id/22/350/350.webp"
-          title="Peaceful Piano"
-          body="Relax and indulge with beautiful piano pieces"
-        />
-        <PlaylistCard
-          imgPath="https://picsum.photos/id/23/350/350.webp"
-          title="Peaceful Piano"
-          body="Relax and indulge with beautiful piano pieces"
-        />
-        <PlaylistCard
-          imgPath="https://picsum.photos/id/24/350/350.webp"
-          title="Peaceful Piano"
-          body="Relax and indulge with beautiful piano pieces"
-        />
+        <PlaylistCard imgPath="https://picsum.photos/id/18/350/350.webp" spot title="Peaceful Piano" body="Relax and indulge with beautiful piano pieces" />
+        <PlaylistCard imgPath="https://picsum.photos/id/19/350/350.webp" spot title="Peaceful Piano" body="Relax and indulge with beautiful piano pieces" />
+        <PlaylistCard imgPath="https://picsum.photos/id/20/350/350.webp" spot title="Peaceful Piano" body="Relax and indulge with beautiful piano pieces" />
+        <PlaylistCard imgPath="https://picsum.photos/id/21/350/350.webp" spot title="Peaceful Piano" body="Relax and indulge with beautiful piano pieces" />
+        <PlaylistCard imgPath="https://picsum.photos/id/22/350/350.webp" spot title="Peaceful Piano" body="Relax and indulge with beautiful piano pieces" />
+        <PlaylistCard imgPath="https://picsum.photos/id/23/350/350.webp" spot title="Peaceful Piano" body="Relax and indulge with beautiful piano pieces" />
+        <PlaylistCard imgPath="https://picsum.photos/id/24/350/350.webp" spot title="Peaceful Piano" body="Relax and indulge with beautiful piano pieces" />
       </Shelf>
     </main>
     <Footer />
@@ -128,8 +72,8 @@ import Shelf from "../components/Shelf.astro";
     grid-auto-rows: min-content;
     gap: var(--space-xxl);
 
-    background: linear-gradient(#1f1f1f 0, var(--surface-default) 100%) 0 0 /
-        100% 20rem no-repeat,
+    background:
+      linear-gradient(#1f1f1f 0, var(--surface-default) 100%) 0 0 / 100% 20rem no-repeat,
       var(--surface-default);
 
     overflow-y: auto;

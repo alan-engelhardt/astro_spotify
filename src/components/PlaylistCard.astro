@@ -1,5 +1,5 @@
 ---
-const { title, body, imgPath } = Astro.props;
+const { title, body, imgPath, spot } = Astro.props;
 ---
 
 <li>
@@ -8,13 +8,9 @@ const { title, body, imgPath } = Astro.props;
       <a href="#0">{title}</a>
     </h3>
     <figure>
-      <img src={imgPath} alt="" height="350" width="350" />
+      <img src={imgPath} alt="" height="350" width="350" class={spot && "square"} />
       <button class="play-btn">
-        <svg viewBox="0 0 24 24"
-          ><path
-            d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
-          ></path></svg
-        >
+        <svg viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
       </button>
     </figure>
     <p>{body}</p>
@@ -73,6 +69,10 @@ const { title, body, imgPath } = Astro.props;
   img {
     border-radius: var(--border-radius-round);
     box-shadow: var(--shadow-default);
+  }
+
+  .square {
+    border-radius: 3px;
   }
 
   .play-btn {
